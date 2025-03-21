@@ -1,0 +1,10 @@
+OPS445 Lab Report - System Information for running ./CheckLab7.py
+=================================================================
+    User login name: jowusu9
+    Linux system name: MintyJ
+    Python executable: /usr/bin/python3
+    Python version: 31012
+    OS Platform: linux
+    Working Directory: /home/jowusu9/ops445/lab7/lab-7-BFM-j9
+    Start at: Fri Mar 21 16:57:47 2025
+=================================================================
