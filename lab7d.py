@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Student ID: [seneca_id] 
+# Student ID: jowusu9 
 class Time:
     """Simple object type for time of the day.
         data attributes: hour, minute, second
@@ -19,16 +19,14 @@ class Time:
 
     def sum_times(self, t2):
         """Add two time objests and return the sum."""
-        self_sec = self.time_to_sec()
-        t2_sec = t2.time_to_sec()
-        sum = sec_to_time(self_sec + t2_sec)
-        return sum
-
+        total_seconds = self.time_to_sec() + t2.time_to_sec()
+        return sec_to_time(total_seconds)
+    
     def change_time(self, seconds):
-        time_seconds = self.time_to_sec()
-        nt = sec_to_time(time_seconds + seconds)
-        self.hour, self.minute, self.second = nt.hour, nt.minute, nt.second 
-        return None
+        time_seconds = self.time_to_sec() + seconds
+        nt = sec_to_time(time_seconds)
+        self.hour, self.minute, self.second = nt.hour, nt.minute, nt.second
+
 
     def time_to_sec(self):
         '''convert a time object to a single integer representing the 
@@ -45,6 +43,7 @@ class Time:
         if self.minute >= 60 or self.second >= 60 or self.hour >= 24:
             return False
         return True
+        
 
 def sec_to_time(seconds):
     '''convert a given number of seconds to a time object in 
